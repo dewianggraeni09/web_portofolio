@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;border:none;outline:none;scroll-behavior:smooth;font-family:'Poppins',sans-serif}
+:root{--bg:#fff5f8;--second:#ffe4ec;--text:#4a2a35;--main:#ff4d8d;}
+html{font-size:62.5%;overflow-x:hidden} body{background:var(--bg);color:var(--text)}
+.header{position:fixed;top:0;left:0;width:100%;padding:2rem 9%;background:var(--bg);display:flex;justify-content:space-between;align-items:center;z-index:100;box-shadow:0 2px 10px rgba(255,77,141,0.1)}
+.logo{font-size:2.5rem;color:var(--text);font-weight:700;cursor:default} .navbar a{font-size:1.7rem;color:var(--text);margin-left:4rem;transition:.3s} .navbar a:hover,.navbar a.active{color:var(--main)}
+#menu-icon{font-size:3.6rem;color:var(--text);display:none}
+section{min-height:100vh;padding:10rem 9% 2rem}
+.home{display:flex;justify-content:center;align-items:center}
+.home-img img{width:30vw;border-radius:50%;border:0.6rem solid white;box-shadow:0 0 0 .8rem rgba(255,77,141,0.15),0 0 40px rgba(255,77,141,0.3);animation:float 4s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-1.5rem)}100%{transform:translateY(0)}}
+.home-content h3{font-size:2.8rem;font-weight:700} .home-content h3:nth-of-type(2){margin-bottom:2rem} .home-content span{color:var(--main)}
+.home-content h1{font-size:5.2rem;font-weight:700;line-height:1.3} .home-content p{font-size:1.6rem;color:#7a4a5a;margin:1rem 0 2rem}
+.social-media a{display:inline-flex;justify-content:center;align-items:center;width:4rem;height:4rem;background:transparent;border:.2rem solid var(--main);border-radius:50%;margin:0 1rem 3rem 0;transition:.3s}
+.social-media a svg{width:2rem;height:2rem;fill:var(--main)} .social-media a:hover{background:var(--main)} .social-media a:hover svg{fill:white}
+.btn{display:inline-block;padding:1.2rem 2.8rem;background:var(--main);border-radius:4rem;box-shadow:0 0 1rem var(--main);font-size:1.6rem;color:white;letter-spacing:.1rem;font-weight:600;transition:.5s}
+.btn:hover{box-shadow:none;transform:scale(1.02)}
+.about{display:flex;justify-content:center;align-items:center;gap:4rem;background:var(--second)}
+.about-img img{width:30vw;border-radius:50%;border:.6rem solid white}
+.heading{text-align:center;font-size:4.5rem} .about-content h2{text-align:left;line-height:1.2} .about-content h3{font-size:2.6rem} .about-content p{font-size:1.6rem;margin:2rem 0 3rem;color:#7a4a5a}
+.services h2{margin-bottom:5rem} .services-container{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:2rem}
+.services-container .services-box{flex:1 1 30rem;background:var(--bg);padding:3rem 2rem 4rem;border-radius:2rem;text-align:center;border:.2rem solid var(--bg);transition:.5s}
+.services-container .services-box:hover{border-color:var(--main);transform:translateY(-5px)}
+.services-box svg{width:6rem;height:6rem;fill:var(--main)} .services-box h3{font-size:2.4rem} .services-box p{font-size:1.5rem;margin:1rem 0 3rem;color:#7a4a5a}
+.testimonial{background:var(--second)} .testimonial h2{margin-bottom:4rem}
+.testimonial-container{display:flex;justify-content:center;flex-wrap:wrap;gap:2.5rem}
+.testimonial-box{background:var(--bg);padding:3rem;border-radius:2rem;flex:1 1 30rem;text-align:left;border:.2rem solid transparent;transition:.3s}
+.testimonial-box:hover{border-color:var(--main)} .stars{color:var(--main);font-size:1.8rem;margin-bottom:1rem} .testimonial-box p{font-size:1.4rem;font-style:italic;color:#7a4a5a;margin-bottom:1.5rem} .testimonial-box h3{font-size:1.6rem} .testimonial-box span{font-size:1.2rem;color:var(--main);font-weight:600}
+.contact h2{margin-bottom:3rem} .contact form{max-width:70rem;margin:1rem auto;text-align:center;margin-bottom:3rem}
+.contact form .input-box{display:flex;justify-content:space-between;flex-wrap:wrap} .contact form .input-box input,.contact form textarea{width:100%;padding:1.5rem;font-size:1.6rem;color:var(--text);background:var(--second);border-radius:.8rem;margin:.7rem 0}
+.contact form .input-box input{width:49%} .contact form textarea{resize:none} .contact form .btn{margin-top:2rem;cursor:pointer}
+.footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:2rem 9%;background:var(--second)}
+.footer-text p{font-size:1.6rem} .footer-iconTop a{display:inline-flex;justify-content:center;align-items:center;padding:.8rem;background:var(--main);border-radius:.8rem;color:white;font-size:2rem}
